@@ -5,15 +5,17 @@ import java.util.Scanner;
 public class EjerciciosEntornos {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        float max = sc.nextFloat();
+        
+        
         System.out.println("Buenos Dias!!");
         
-
+        System.out.println("Ingrese el numero de los municipios: ");
+        Scanner sc = new Scanner(System.in);
+        int max = sc.nextInt();
         for(int cont = 0; cont<max; cont++) {
-            
+            Scanner sca = new Scanner(System.in);
             System.out.println("Pide la temperatura de el municipio");
-            float temp = sc.nextFloat();
+            float temp = sca.nextFloat();
             
             
                    if (temp < 0) {
