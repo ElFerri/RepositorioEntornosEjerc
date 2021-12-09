@@ -6,8 +6,7 @@ public class EjerciciosEntornos {
 
     public static void main(String[] args) {
 
-        float mayor = -5000;
-        float menor = 5000;
+        float mayor = -5000, menor = 5000;
         Scanner sc = new Scanner(System.in);
         float temp;
 
