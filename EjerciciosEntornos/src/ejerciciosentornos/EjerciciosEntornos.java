@@ -38,7 +38,7 @@ public class EjerciciosEntornos {
             }
         }
 
-        System.out.println("La temperatura mayor es" + mayor + "y la temperatura minima es " + menor);
+        System.out.println("La temperatura mayor es " + mayor + " y la temperatura minima es " + menor);
 
     }
 }
