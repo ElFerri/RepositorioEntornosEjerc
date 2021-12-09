@@ -5,45 +5,39 @@ import java.util.Scanner;
 public class EjerciciosEntornos {
 
     public static void main(String[] args) {
-        
-        
-        System.out.println("Buenos Dias!!");
-        int mayor = 0;
-        int menor = 0;
-        int mayorS = 0;
-        int menorS = 0;
-        System.out.println("Ingrese el numero de los municipios: ");
+
+        float mayor = -5000;
+        float menor = 5000;
         Scanner sc = new Scanner(System.in);
-        int max = sc.nextInt();
-        for(int cont = 0; cont<max; cont++) {
-            Scanner sca = new Scanner(System.in);
-            System.out.println("Pide la temperatura de el municipio");
-            float temp = sca.nextFloat();
+        float temp;
+
+        System.out.println("Buenos Dias!!");
+        System.out.println("Ingrese el numero de los municipios: ");
+
+        float max = sc.nextFloat();
+
+        for (int cont = 0; cont < max; cont++) {
+
+            System.out.println("Dime la temperatura del municipio");
+            temp = sc.nextFloat();
+
+            if (temp < 0) {
+                System.out.println("La temperatura esta en negativo");
+
+            } else {
+                System.out.println("La temperatura esta en positivo");
+
+            }
             
-            
-        if (temp < 0) {
-            System.out.println("La temperatura esta en negativo");
-            System.out.println("La temperatura mayor de los casos pedidos es" +temp);
-            System.out.println("La temperatura menor de los casos pedidos es" +temp);
-            
-        } else {
-            System.out.println("La temperatura esta en positivo");
-            
-        
- 
- 
-        if (temp<mayor) {
-                       temp = mayor;
-        } else {
-                temp = menor;
-                }
+            if (temp > mayor) {
+                mayor = temp;
+            } else if (temp < menor) {
+                menor = temp;
+            }
         }
-                   
-        
-        System.out.println("La temperatura mayor es"  +mayor  + "y la temperatura minima es " +menor);
-        
-        }
+
+        System.out.println("La temperatura mayor es" + mayor + "y la temperatura minima es " + menor);
+
     }
 }
-
 
