@@ -31,7 +31,9 @@ public class EjerciciosEntornos {
             
             if (temp > mayor) {
                 mayor = temp;
-            } else if (temp < menor) {
+            }
+            
+            if (temp < menor) {
                 menor = temp;
             }
         }
