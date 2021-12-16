@@ -20,6 +20,7 @@ public class EjerciciosEntornos {
         System.out.println("Ingrese el numero de los municipios: ");
 
         int max = sc.nextInt();
+        //para guardar el array
         temperaturas = new double[max];
 
         for (int cont = 0; cont < max; cont++) {
