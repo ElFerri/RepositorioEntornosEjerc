@@ -7,7 +7,11 @@ public class EjerciciosEntornos {
 
     public static void main(String[] args) {
 
-        float mayor = -5000, menor = 5000;
+        double mayor = Double.MIN_VALUE;
+        double menor = Double.MAX_VALUE;
+        
+        double[] temperaturas;
+        
         Scanner sc = new Scanner(System.in);
         float temp;
         
@@ -15,12 +19,14 @@ public class EjerciciosEntornos {
         System.out.println("Buenos Dias!!");
         System.out.println("Ingrese el numero de los municipios: ");
 
-        float max = sc.nextFloat();
+        int max = sc.nextInt();
+        temperaturas = new double[max];
 
         for (int cont = 0; cont < max; cont++) {
 
             System.out.println("Dime la temperatura del municipio");
             temp = sc.nextFloat();
+            
 
             if (temp < 0) {
                 System.out.println("La temperatura esta en negativo");
