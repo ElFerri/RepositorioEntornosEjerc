@@ -1,6 +1,7 @@
 package ejerciciosentornos;
 
 import java.util.Scanner;
+//Todo bien
 
 public class EjerciciosEntornos {
 
@@ -9,6 +10,7 @@ public class EjerciciosEntornos {
         float mayor = -5000, menor = 5000;
         Scanner sc = new Scanner(System.in);
         float temp;
+        
 
         System.out.println("Buenos Dias!!");
         System.out.println("Ingrese el numero de los municipios: ");
