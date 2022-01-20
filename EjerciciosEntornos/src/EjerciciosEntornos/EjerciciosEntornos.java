@@ -1,19 +1,47 @@
 package ejerciciosentornos;
 
-import java.util.Scanner;
-//Todo bien
 
-public class EjerciciosEntornos {
+import java.util.Scanner;
+
+/**
+ * Clase temperatura para gestionar temperatura de los municipios
+ *
+ * @author 
+ */
+public class EjerciciosEntornos{
+
+    /**
+     * 
+     */
+    /**
+     * Metodo myMethod para escribir frases y introduzirlas en un lugar querido.
+     * @param x Simboliza un numero que podra ser escrito por el usuario
+     * @return 
+     */
+    
+    public static int myMethod(int x) {
+        return 5 + x;
+        
+    }
+
+    /**
+     * Método main
+     *
+     * @param args Argumentos de linia de comandos
+     */
 
     public static void main(String[] args) {
-
+        System.out.println(myMethod(3));
+        //Variable que nos va a guardar las temperaturas introducidas.
         double mayor = Double.MIN_VALUE;
         double menor = Double.MAX_VALUE;
-
+        
+        int[] municipios;
         double[] temperaturas;
 
         Scanner sc = new Scanner(System.in);
         float temp;
+        
 
         System.out.println("Buenos Dias!!");
         System.out.println("Ingrese el numero de los municipios: ");
@@ -21,6 +49,7 @@ public class EjerciciosEntornos {
         int max = sc.nextInt();
 
         temperaturas = new double[max];
+        municipios = new int[max];
 
         for (int cont = 0; cont < max; cont++) {
 
@@ -28,6 +57,12 @@ public class EjerciciosEntornos {
             temp = sc.nextFloat();
             temperaturas[cont] = temp;
 
+            for(cont = 0; cont < max; cont++) {
+                System.out.println("Dime como se llaman los municipios por orden puesto de la temperatura indicada");
+                int muni;
+                muni = sc.nextInt();
+            municipios[cont] = muni;
+            }
             if (temp < 0) {
                 System.out.println("La temperatura esta en negativo");
 
@@ -52,6 +87,9 @@ public class EjerciciosEntornos {
             System.out.println(temperaturas[i]);
 
         }
-
+        System.out.println("Los municipios son los siguientes");
+        for (int y = 0; y < municipios.length; y++) {
+            System.out.println(municipios[y]);
+        }
     }
 }
